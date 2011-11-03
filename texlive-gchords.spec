@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /graphics/gchords
+# catalog-date 2009-02-12 12:29:53 +0100
+# catalog-license gpl
+# catalog-version 1.20
 Name:		texlive-gchords
 Version:	1.20
 Release:	1
@@ -44,6 +50,7 @@ creates LaTeX files that use gchords.sty.
 %doc %{_texmfdistdir}/doc/latex/gchords/gchords_doc.pdf
 %doc %{_texmfdistdir}/doc/latex/gchords/gchords_doc.tex
 %doc %{_texmfdistdir}/doc/latex/gchords/get2knowu.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -54,3 +61,5 @@ creates LaTeX files that use gchords.sty.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
