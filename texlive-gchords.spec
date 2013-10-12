@@ -1,12 +1,12 @@
-# revision 15878
+# revision 29803
 # category Package
 # catalog-ctan /graphics/gchords
-# catalog-date 2009-02-12 12:29:53 +0100
+# catalog-date 2012-06-04 13:21:54 +0200
 # catalog-license gpl
 # catalog-version 1.20
 Name:		texlive-gchords
 Version:	1.20
-Release:	2
+Release:	3
 Summary:	Typeset guitar chords
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/gchords
@@ -51,17 +51,3 @@ creates LaTeX files that use gchords.sty.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.20-2
-+ Revision: 752191
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.20-1
-+ Revision: 718527
-- texlive-gchords
-- texlive-gchords
-- texlive-gchords
-- texlive-gchords
-
