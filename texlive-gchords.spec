@@ -6,7 +6,7 @@
 # catalog-version 1.20
 Name:		texlive-gchords
 Version:	1.20
-Release:	5
+Release:	6
 Summary:	Typeset guitar chords
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/gchords
