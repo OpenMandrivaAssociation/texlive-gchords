@@ -1,18 +1,12 @@
-# revision 29803
-# category Package
-# catalog-ctan /graphics/gchords
-# catalog-date 2012-06-04 13:21:54 +0200
-# catalog-license gpl
-# catalog-version 1.20
 Name:		texlive-gchords
-Version:	1.20
-Release:	12
+Version:	29803
+Release:	1
 Summary:	Typeset guitar chords
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/gchords
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gchords.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gchords.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gchords.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gchords.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -26,12 +20,12 @@ typesetting above lyrics. The bundle also includes a TCL script
 creates LaTeX files that use gchords.sty.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -44,7 +38,7 @@ creates LaTeX files that use gchords.sty.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
