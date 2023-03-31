@@ -1,6 +1,6 @@
 Name:		texlive-gchords
 Version:	29803
-Release:	1
+Release:	2
 Summary:	Typeset guitar chords
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/gchords
