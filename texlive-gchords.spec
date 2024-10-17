@@ -3,7 +3,7 @@ Version:	29803
 Release:	2
 Summary:	Typeset guitar chords
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/graphics/gchords
+URL:		https://www.ctan.org/tex-archive/graphics/gchords
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gchords.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gchords.doc.r%{version}.tar.xz
